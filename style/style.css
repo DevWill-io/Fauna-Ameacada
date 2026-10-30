@@ -175,3 +175,22 @@ main {
   .menu ul { flex-direction: column; gap: 6px; }
   .menu a { padding: 10px; background: rgba(255, 255, 255, .08); }
 }
+
+
+.card ul {
+  padding-left: 20px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card li {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #2c3a2c;
+}
+
+.card li::marker {
+  color: #2e7d4a;
+}
