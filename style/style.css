@@ -194,3 +194,43 @@ main {
 .card li::marker {
   color: #2e7d4a;
 }
+
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* Corta a imagem bonitinha sem achatar */
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.card ul {
+  padding-left: 18px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card li {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #2c3a2c;
+}
+
+.card li strong {
+  color: #1f4d2e;
+}
+
+.card li::marker {
+  color: #2e7d4a;
+}
+
+.ameaca {
+  font-size: 0.85rem;
+  background: #ffebee;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: #b81e1e;
+  margin-top: auto;
+  border-left: 3px solid #b81e1e;
+}
