@@ -157,54 +157,9 @@ main {
   font-size: .9rem;
 }
 
-@media (max-width: 700px) {
-  .site-header {
-    flex-direction: column;
-    align-items: stretch;
-    padding: 16px 20px;
-  }
-  .logo a { display: block; text-align: center; }
-  .menu ul { justify-content: center; gap: 8px; }
-  .menu a { padding: 8px 12px; font-size: .9rem; }
-  .hero { flex-direction: column; padding: 24px; }
-  .hero-texto h1 { font-size: 1.6rem; }
-  .animal { max-width: 100%; }
-}
-
-@media (max-width: 420px) {
-  .menu ul { flex-direction: column; gap: 6px; }
-  .menu a { padding: 10px; background: rgba(255, 255, 255, .08); }
-}
-
-
-.card ul {
-  padding-left: 20px;
-  margin-top: 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.card li {
-  font-size: 0.9rem;
-  line-height: 1.4;
-  color: #2c3a2c;
-}
-
-.card li::marker {
-  color: #2e7d4a;
-}
-
-.card-img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover; /* Corta a imagem bonitinha sem achatar */
-  border-radius: 8px;
-  margin-bottom: 8px;
-}
-
 .card ul {
   padding-left: 18px;
+  margin-top: 8px;
   margin-bottom: 12px;
   display: flex;
   flex-direction: column;
@@ -225,6 +180,14 @@ main {
   color: #2e7d4a;
 }
 
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
 .ameaca {
   font-size: 0.85rem;
   background: #ffebee;
@@ -233,4 +196,52 @@ main {
   color: #b81e1e;
   margin-top: auto;
   border-left: 3px solid #b81e1e;
+}
+
+.perfil {
+  align-items: center;
+  text-align: center;
+}
+
+.foto-integrante {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #f5b700;
+  margin-bottom: 8px;
+}
+
+.funcao {
+  font-size: 0.85rem;
+  color: #8bffb1;
+  background: #1f4d2e;
+  padding: 4px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.perfil p {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+  .site-header {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px 20px;
+  }
+  .logo a { display: block; text-align: center; }
+  .menu ul { justify-content: center; gap: 8px; }
+  .menu a { padding: 8px 12px; font-size: .9rem; }
+  .hero { flex-direction: column; padding: 24px; }
+  .hero-texto h1 { font-size: 1.6rem; }
+  .animal { max-width: 100%; }
+}
+
+@media (max-width: 420px) {
+  .menu ul { flex-direction: column; gap: 6px; }
+  .menu a { padding: 10px; background: rgba(255, 255, 255, .08); }
 }
